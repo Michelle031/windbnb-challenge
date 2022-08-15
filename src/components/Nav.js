@@ -47,13 +47,13 @@ function Nav() {
                 <h3 className='text-[#BDBDBD] text-xs'>{guests} guests</h3>
             </div>
             <div className='flex justify-center order-5 shadow-none md:select sm:order-none '><p className='bg-[#EB5757] p-4 text-center rounded-lg text-sm w-auto inline-block'><Search sx={{height: "14px"}} /> Search</p></div>
-            {points && <div className='flex flex-col space-y-4 pt-3'>
+           <div className={`${guest && "opacity-0"}flex flex-col space-y-4 p-4`}>
                 <p className='point' title="Helsinki" onClick={setState}><LocationOn />Helsinki, Finland</p>
                 <p className='point' title="Turku" onClick={setState}><LocationOn />Turku, Finland</p>
                 <p className='point' title="Oulu" onClick={setState}><LocationOn />Oulu, Finland</p>
                 <p className='point' title="Vaasa" onClick={setState}><LocationOn />Vaasa, Finland</p>
-            </div>}
-            {guest && <div className='flex flex-col space-y-4 p-4'>
+            </div>
+            <div className={`${points && "opacity-0"}flex flex-col space-y-4 p-4`}>
                 <div className="title">
                     <h3>Adults</h3>
                     <p className="text-[#BDBDBD]">Ages 13 or above</p>
@@ -72,7 +72,7 @@ function Nav() {
                         <button className="border px-1" onClick={() => setChildren(decrease(children))}>-</button>
                     </div>
                 </div>
-            </div>}
+            </div>
         </div>
     </div>
   )
