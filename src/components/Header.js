@@ -14,9 +14,9 @@ function Header() {
   }
 
   return (
-    <div className='flex flex-col items-start md:flex-row md:justify-between md:items-center py-8 px-4 md:px-10 lg:px-12' onClick={() => setShow(true)}>
+    <div className='flex flex-col items-start md:flex-row md:justify-between md:items-center py-8 px-4 md:px-10 lg:px-12'>
       <img src='/logo.svg' alt="" className='mb-3 md:mb-0'/>
-      <div className="flex shadow-md rounded-2xl mx-auto md:mx-0" >
+      <div className="flex shadow-md rounded-2xl mx-auto md:mx-0" onClick={() => setShow(true)} >
         <p className='text-sm text-[#333] item'>{filter}, Finland</p>
         <p className="text-sm text-[#BDBDBD] item">Add guests</p>
         <div className="p-5"><Search sx={{color: "#EB5757", height:"18px"}} /></div>
