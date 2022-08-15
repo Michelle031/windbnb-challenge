@@ -16,6 +16,6 @@
         @apply text-xs flex flex-col space-y-1;
     }
     .active {
-        @apply border;
+        @apply border border-[#333333];
     }
 }
