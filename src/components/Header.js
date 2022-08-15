@@ -21,7 +21,7 @@ function Header() {
         <p className="text-sm text-[#BDBDBD] item">Add guests</p>
         <div className="p-5"><Search sx={{color: "#EB5757", height:"18px"}} /></div>
       </div>
-      {show && <button className="p-3 absolute right-0 text-black text-2xl z-50" onClick={close}>x</button>}
+      {show && <button className="absolute p-1 px-3 right-0 top-0 rounded-full text-black text-xl z-50 hover:bg-gray-50" onClick={close}>x</button>}
       {show && <Nav/>}
 
       

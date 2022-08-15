@@ -20,6 +20,7 @@ function App() {
     <div className="App">
       <Header />
       <Stays />
+      <footer className="font-xs px-6"><p>created by <b>Michelle031</b> - devChallenges.io </p></footer>
     </div>
   );
 }
